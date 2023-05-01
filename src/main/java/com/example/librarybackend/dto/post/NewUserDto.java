@@ -1,4 +1,4 @@
-package com.example.librarybackend.dto.add;
+package com.example.librarybackend.dto.post;
 
 
 import lombok.AllArgsConstructor;

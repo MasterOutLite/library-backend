@@ -1,4 +1,4 @@
-package com.example.librarybackend.dto.add;
+package com.example.librarybackend.dto.post;
 
 
 import lombok.AllArgsConstructor;
@@ -20,7 +20,7 @@ public class NewBookDto {
     @NonNull
     public Boolean inLibrary;
     @NonNull
-    public String library_uuid;
+    public String libraryUuid;
     @NonNull
     public String genre;
 }

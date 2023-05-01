@@ -1,4 +1,4 @@
-package com.example.librarybackend.dto;
+package com.example.librarybackend.dto.get;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,10 +14,10 @@ import java.time.OffsetDateTime;
 public class OrdersDto {
 
     private String uuid;
-    public String book_uuid;
-    public String user_uuid;
-    public String librarian_uuid;
+    public String bookUuid;
+    public String userUuid;
+    public String librarianUuid;
     public OffsetDateTime tookInDate;
     public OffsetDateTime returnDate;
-    public boolean returned;
+    public Boolean returned;
 }

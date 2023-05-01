@@ -1,12 +1,10 @@
-package com.example.librarybackend.dto.add;
+package com.example.librarybackend.dto.post;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.lang.NonNull;
-
-import java.time.OffsetDateTime;
 
 @Getter
 @Setter
@@ -15,11 +13,9 @@ import java.time.OffsetDateTime;
 public class NewOrdersDto {
 
     @NonNull
-    public String book_uuid;
+    public String bookUuid;
     @NonNull
-    public String user_uuid;
+    public String userUuid;
     @NonNull
-    public String librarian_uuid;
-    @NonNull
-    public OffsetDateTime tookInDate;
+    public String librarianUuid;
 }

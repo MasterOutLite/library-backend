@@ -1,6 +1,5 @@
-package com.example.librarybackend.dto.add;
+package com.example.librarybackend.dto.post;
 
-import com.example.librarybackend.entity.Library;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,7 +20,7 @@ public class NewLibrarianDto {
     @NonNull
     public String position;
     @NonNull
-    public String library_uuid;
+    public String libraryUuid;
     @NonNull
     public String login;
     @NonNull

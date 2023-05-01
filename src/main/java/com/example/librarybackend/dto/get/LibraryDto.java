@@ -1,4 +1,4 @@
-package com.example.librarybackend.dto;
+package com.example.librarybackend.dto.get;
 
 import lombok.*;
 

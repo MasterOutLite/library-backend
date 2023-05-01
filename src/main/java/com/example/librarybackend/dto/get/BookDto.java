@@ -1,4 +1,4 @@
-package com.example.librarybackend.dto;
+package com.example.librarybackend.dto.get;
 
 import com.example.librarybackend.entity.Library;
 import lombok.*;
@@ -12,6 +12,7 @@ public class BookDto {
     public String uuid;
     public String name;
     public Boolean inLibrary;
-    public String library_uuid;
+    public String libraryUuid;
     public String genre;
+    public String author;
 }

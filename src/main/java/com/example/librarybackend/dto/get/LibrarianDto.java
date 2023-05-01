@@ -1,4 +1,4 @@
-package com.example.librarybackend.dto;
+package com.example.librarybackend.dto.get;
 
 
 import lombok.*;
@@ -14,6 +14,6 @@ public class LibrarianDto {
     public String name;
     public String lastname;
     public String position;
-    public String library_uuid;
+    public String libraryUuid;
     public boolean working;
 }
