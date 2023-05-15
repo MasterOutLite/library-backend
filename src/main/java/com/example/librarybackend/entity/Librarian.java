@@ -12,16 +12,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Librarian extends HistoryEntity {
-//    name varchar(255) NOT NULL,
-//    lastname varchar(255) NOT NULL,
-//    position varchar(255) NOT NULL,
-//    id_library integer NOT NULL,
-//    login varchar(30) NOT NULL,
-//    password varchar(30) NOT NULL,
-//    working bool NOT NULL,
-
-    @Column(nullable = false)
+public class Librarian extends HistoryEntity {    @Column(nullable = false)
     private String uuid;
 
     @PrePersist

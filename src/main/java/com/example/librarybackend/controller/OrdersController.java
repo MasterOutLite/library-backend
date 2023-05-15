@@ -35,6 +35,7 @@ public class OrdersController {
         ordersService.updateOrders(ordersDto);
     }
 
+
     @DeleteMapping("{uuid}")
     public void deleteOrdersByUuid(@PathVariable String uuid) throws NotFoundException {
         ordersService.deleteOrdersByUuid(uuid);

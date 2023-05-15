@@ -15,6 +15,7 @@ import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.sql.Date;
 import java.time.OffsetDateTime;
 import java.util.Optional;
 
@@ -60,7 +61,7 @@ public class OrdersServiceImpl implements OrdersService {
     }
 
     private void updateOrders(OrdersDto ordersDto, Orders orders) {
-        Optional.ofNullable(ordersDto.getReturnDate()).ifPresent(orders::setReturnDate);
+        orders.returnDate = OffsetDateTime.now();
         Optional.ofNullable(ordersDto.getReturned()).ifPresent(orders::setReturned);
     }
 

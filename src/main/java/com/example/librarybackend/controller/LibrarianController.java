@@ -30,7 +30,7 @@ public class LibrarianController {
         return librarianService.getLibrarianDtoByUuid(uuid);
     }
 
-    @GetMapping("login")
+    @PostMapping("login")
     public ResponseAuthDto logInLibrarian(@RequestBody RequestAuthDto authDto){
         System.out.println(authDto.getLogin() +" " + authDto.getPassword() + " " + authDto.getToken());
         return librarianService.logInLibrarian(authDto);

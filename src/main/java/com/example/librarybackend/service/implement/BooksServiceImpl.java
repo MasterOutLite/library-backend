@@ -119,7 +119,9 @@ public class BooksServiceImpl implements BooksService {
     @Override
     public void saveBook(NewBookDto bookDto) throws NotFoundException {
         var book = bookMapper.toEntity(bookDto);
-        System.out.println("Debug Book: " + bookDto.name + " : " + bookDto.author + " : " + bookDto.libraryUuid);
+        System.out.println("Debug Book: " + bookDto.name +
+                " : " + bookDto.author + " : " + bookDto.libraryUuid +
+                " : " + bookDto.genre);
         var library = libraryRepository.findLibraryByUuid(bookDto.libraryUuid)
                 .orElseThrow(() -> new NotFoundException("Save book. Not found library"));
 

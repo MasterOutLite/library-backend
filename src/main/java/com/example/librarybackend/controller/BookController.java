@@ -28,11 +28,6 @@ public class BookController {
         return booksService.getBookByUuid(uuid);
     }
 
-//    @GetMapping("all")
-//    public Iterable<BookDto> getAllBook() throws NotFoundException {
-//        return booksService.getAllBookDto();
-//    }
-
     @GetMapping("all")
     public Iterable<BookDto> getBookByFilter
             (@RequestParam(required = false) Optional<String> name,

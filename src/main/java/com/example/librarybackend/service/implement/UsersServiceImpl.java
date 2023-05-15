@@ -58,15 +58,7 @@ public class UsersServiceImpl implements UsersService {
                 .orElseThrow(() -> new NotFoundException("Not found user by uuid: " + userDto.uuid));
 
         updateUsers( user ,userDto);
-        //toUpdateUsers(user,userDto);
     }
-
-//    private static void updateUser(UserDto userDto, Users user) {
-//        Optional.ofNullable(userDto.getName()).ifPresent(user::setName);
-//        Optional.ofNullable(userDto.getLastname()).ifPresent(user::setLastname);
-//        Optional.ofNullable(userDto.getMail()).ifPresent(user::setMail);
-//        Optional.ofNullable(userDto.getPhone()).ifPresent(user::setPhone);
-//    }
 
     public void updateUsers(Users users, UserDto userDto) {
         if (users == null || userDto == null) {

@@ -14,10 +14,6 @@ import java.util.UUID;
 @Entity
 @Table
 public class Library extends HistoryEntity {
-//    address varchar(255) NOT NULL,
-//    name varchar(255) NOT NULL,
-
-
     @Column(nullable = false)
     private String uuid;
 
